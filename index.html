@@ -1,36 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fonts -->
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- styles -->
-    <link rel="stylesheet" href="./src/css/normalize.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- title -->
-    <title>Bakery</title>
+    <title>Artisax Bakery</title>
     <!-- main code -->
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
+      <div class="container">
         <nav>
-            <ul class="nav-list">
-                <li class="nav-item" ><a href="#"></a></li>
-                <li class="nav-item" ><a href="#"></a></li>
-                <li class="nav-item" ><a href="#"></a></li>
-                <li class="nav-item" ><a href="#"></a></li>
-                <li class="nav-item" ><a href="#"></a></li>
-            </ul>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">About us</a></li>
+            <li class="nav-item"><a href="#">Delivery</a></li>
+            <li class="nav-item"><a href="#">Menu</a></li>
+            <li class="nav-item"><a href="#">Contacts</a></li>
+            <li class="nav-item"><a href="#">Reviews</a></li>
+          </ul>
         </nav>
+        <div class="header-text-block">
+          <h1>TRADITIONAL<br />ARTISAX BAKERY</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button>Shop now</button>
+        </div>
+        <ul class="products-list">
+          <li class="product-card">
+            <img src="" alt="" class="product-card-image" />
+            <p class="product-card-price">$8.00 (kg)</p>
+            <h3 class="product-card-title">American Cookie</h3>
+            <button class="product-card-button">Buy</button>
+          </li>
+          <li class="product-card">
+            <img src="" alt="" class="product-card-image" />
+            <p class="product-card-price">$4.00</p>
+            <h3 class="product-card-title">Croissant with chocolate</h3>
+            <button class="product-card-button">Buy</button>
+          </li>
+          <li class="product-card">
+            <img src="" alt="" class="product-card-image" />
+            <p class="product-card-price">For piece $4.00</p>
+            <h3 class="product-card-title">Blackberry pie</h3>
+            <button class="product-card-button">Buy</button>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main">
-        
-     
+      <section class="menu">
+        <div class="container">
+          <h2 class="section-menu-title">Menu</h2>
+
+          <ul class="menu-list">
+            <li class="menu-item">
+              <h3 class="menu-item-title">Breads</h3>
+              <button class="menu-item-button">Order</button>
+            </li>
+            <li class="menu-item">
+              <h3 class="menu-item-title">Bakery</h3>
+              <button class="menu-item-button">Order</button>
+            </li>
+            <li class="menu-item">
+              <h3 class="menu-item-title">Cakes & Cupcakes</h3>
+              <button class="menu-item-button">Order</button>
+            </li>
+            <li class="menu-item">
+              <h3 class="menu-item-title">Cookies & Pretzels</h3>
+              <button class="menu-item-button">Order</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="quality">
+        <div class="container">
+          <h2 class="section-quality-title">Quality our bakery</h2>
+
+          <ul class="quality-card-list">
+            <li class="quality-card">
+              <img src="" alt="" class="quality-card-image" />
+              <ol class="quality-card-list">
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+              </ol>
+            </li>
+            <li class="quality-card">
+              <img src="" alt="" class="quality-card-image" />
+              <ol class="quality-card-list">
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+              </ol>
+            </li>
+            <li class="quality-card">
+              <img src="" alt="" class="quality-card-image" />
+              <ol class="quality-card-list">
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+                <li class="quality-card-item"></li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="container">
+          <h2 class="section-why-title">Why TRADITIONAL ARTISAX BAKERY?</h2>
+
+          <ul class="why-list">
+            <li class="why-item">
+              <img src="" alt="" class="why-item-image" />
+              <p class="why-item-text">Order at home</p>
+            </li>
+            <li class="why-item">
+              <img src="" alt="" class="why-item-image" />
+              <p class="why-item-text">Fresh food</p>
+            </li>
+            <li class="why-item">
+              <img src="" alt="" class="why-item-image" />
+              <p class="why-item-text">Speed delivery 24h</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="where">
+        <div class="container">
+          <h2 class="section-where-title">Where?</h2>
+          <ul>
+            <li><img src="" alt="" class="where-image" /></li>
+
+            <li class="where-block">
+              <h3 class="where-title">How?</h3>
+              <p class="where-text">+38 055 123 13 12</p>
+              <p class="where-text">Tik tok: @TR.Bakery</p>
+              <p class="where-text">Inst@TR.Bakery</p>
+            </li>
+            <li class="where-block">
+              <h3 class="where-title">When?</h3>
+              <p class="where-text">With 8:30 to 20:30</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer>
 
+    <footer class="footer">
+      <section class="footer-brand">
+        <div class="container">
+          <ul class="footer-list">
+            <li>
+              <h2 class="footer-title">Traditional Artisax Bakery</h2>
+              <p class="footer-text">We want be healthy</p>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">About us</a>
+              <a class="footer-link" href="#">Features</a>
+              <a class="footer-link" href="#">News & Blog</a>
+            </li>
+
+            <li class="footer-item">
+              <a class="footer-link" href="#">What is Eatly</a>
+              <a class="footer-link" href="#">Support Us</a>
+            </li>
+
+            <li class="footer-item">
+              <a class="footer-link" href="#">Why Eatly</a>
+              <a class="footer-link" href="#">Capital</a>
+              <a class="footer-link" href="#">Security</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p class="footer-copyright">©2026 Eatly. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
-

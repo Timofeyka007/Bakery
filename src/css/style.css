@@ -1,0 +1,138 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.nav-list a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.header-text-block p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.header-text-block button {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.product-card-price {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.product-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.product-card-button {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.section-menu-title,
+.section-quality-title,
+.section-why-title,
+.section-where-title {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.menu-item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-item-button {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quality-card-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.why-item-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.where-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.where-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-top: 6px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.6;
+}
