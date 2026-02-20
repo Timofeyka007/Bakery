@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <!-- styles -->
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/normalize.css" />
@@ -33,32 +27,45 @@
           </ul>
         </nav>
         <div class="header-text-block">
-          <h1>TRADITIONAL<br />ARTISAX BAKERY</h1>
+          <h1 class="header-title">TRADITIONAL<br>ARTISAX BAKERY</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           </p>
-          <button>Shop now</button>
+          <button class="hero-button">Shop now</button>
         </div>
         <ul class="products-list">
           <li class="product-card">
-            <img src="" alt="" class="product-card-image" />
+            <img src="./src/img/cookies.svg" alt="cookies" class="product-card-image" />
+            <a href="#" class="exclamation-wrapper">
+              <img src="./src/img/round.svg" alt="round">
+              <span>!</span>
+            </a>
+            <div>
             <p class="product-card-price">$8.00 (kg)</p>
             <h3 class="product-card-title">American Cookie</h3>
             <button class="product-card-button">Buy</button>
+            </div>
           </li>
           <li class="product-card">
-            <img src="" alt="" class="product-card-image" />
+            <img src="./src/img/croissant.svg" alt="croissant" class="product-card-image" />
+            <a href="#" class="exclamation-wrapper">
+              <img src="./src/img/round.svg" alt="round">
+              <span>!</span>
+            </a> 
+            <div>
             <p class="product-card-price">$4.00</p>
-            <h3 class="product-card-title">Croissant with chocolate</h3>
+            <h3 class="product-card-title">Croissant with chocolate</h3>                    
             <button class="product-card-button">Buy</button>
+            </div>
           </li>
           <li class="product-card">
-            <img src="" alt="" class="product-card-image" />
+            <img src="./src/img/blackberrypie.svg" alt="blackberry-pie" class="product-card-image" />
+            <div>
             <p class="product-card-price">For piece $4.00</p>
-            <h3 class="product-card-title">Blackberry pie</h3>
+            <h3 class="product-card-title">Blackberry pie</h3>                       
             <button class="product-card-button">Buy</button>
+            </div>
           </li>
         </ul>
       </div>
@@ -69,20 +76,28 @@
           <h2 class="section-menu-title">Menu</h2>
 
           <ul class="menu-list">
-            <li class="menu-item">
-              <h3 class="menu-item-title">Breads</h3>
+            <li class="menu-card">
+              <div class="menu-item">
+                <h3 class="menu-item-title">Breads</h3>
+              </div>
               <button class="menu-item-button">Order</button>
             </li>
-            <li class="menu-item">
-              <h3 class="menu-item-title">Bakery</h3>
+            <li class="menu-card">
+              <div class="menu-item">
+                <h3 class="menu-item-title">Bakery</h3>
+              </div>
               <button class="menu-item-button">Order</button>
             </li>
-            <li class="menu-item">
-              <h3 class="menu-item-title">Cakes & Cupcakes</h3>
+            <li class="menu-card">
+              <div class="menu-item">
+                <h3 class="menu-item-title">Cakes & Cupcakes</h3>
+              </div>
               <button class="menu-item-button">Order</button>
             </li>
-            <li class="menu-item">
-              <h3 class="menu-item-title">Cookies & Pretzels</h3>
+            <li class="menu-card">
+              <div class="menu-item">
+                <h3 class="menu-item-title">Cookies & Pretzels</h3>
+              </div>
               <button class="menu-item-button">Order</button>
             </li>
           </ul>
@@ -93,32 +108,32 @@
         <div class="container">
           <h2 class="section-quality-title">Quality our bakery</h2>
 
-          <ul class="quality-card-list">
-            <li class="quality-card">
-              <img src="" alt="" class="quality-card-image" />
-              <ol class="quality-card-list">
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
+          <ul class="quality-list">
+            <li class="quality-card quality-card-bread">
+              <img src="./src/img/bread.png" alt="bread" class="quality-card-image" />
+              <ol class="quality-features quality-features-bread">
+                <li class="quality-card-item">1.Flour with fresh wheat</li>
+                <li class="quality-card-item">2.New drozzhi</li>
+                <li class="quality-card-item">3.Fresh eggs</li>
+                <li class="quality-card-item">4.Water from the well</li>
               </ol>
             </li>
-            <li class="quality-card">
-              <img src="" alt="" class="quality-card-image" />
-              <ol class="quality-card-list">
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
+            <li class="quality-card quality-card-cookie">
+              <img src="./src/img/cookiewithchocolatedots.png" alt="chocolate cookies" class="quality-card-image" />
+              <ol class="quality-features">
+                <li class="quality-card-item">1.Flour with fresh wheat</li>
+                <li class="quality-card-item">2.New drozzhi</li>
+                <li class="quality-card-item">3.Fresh eggs</li>
+                <li class="quality-card-item">4.Water from the well</li>
               </ol>
             </li>
-            <li class="quality-card">
-              <img src="" alt="" class="quality-card-image" />
-              <ol class="quality-card-list">
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
-                <li class="quality-card-item"></li>
+            <li class="quality-card quality-card-pie">
+              <img src="./src/img/applepie.png" alt="pie" class="quality-card-image" />
+              <ol class="quality-features">
+                <li class="quality-card-item">1.Flour with fresh wheat</li>
+                <li class="quality-card-item">2.New drozzhi</li>
+                <li class="quality-card-item">3.Fresh eggs</li>
+                <li class="quality-card-item">4.Water from the well</li>
               </ol>
             </li>
           </ul>
@@ -194,7 +209,7 @@
           </ul>
         </div>
       </section>
-      <p class="footer-copyright">©2026 Eatly. All rights reserved.</p>
+      <p class="footer-copyright">©2022 Eatly. All rights reserved.</p>
     </footer>
   </body>
 </html>

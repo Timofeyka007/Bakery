@@ -1,70 +1,31 @@
+:root {
+  --text_color: #ffffff;
+  --first_button_color: #b47b48;
+  --buy_button_color: #c85312;
+  --quality_box_color: #f2f2f2;
+  --background_color: #202023;
+  --svg_color: #d9d9d9;
+  --product_card_color: #272727;
+  --product_card_hover_color: #ebad51;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  color: #ffffff;
-  background-color: #1e1e1e;
+  max-width: auto;
 }
 
-h1, h2, h3 {
-  font-family: "Playfair Display", serif;
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
   margin: 0;
 }
 
-p {
-  margin: 0;
-}
-
-.nav-list a {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.header h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.header-text-block p {
-  font-size: 18px;
-  font-weight: 300;
-  max-width: 500px;
-  margin-top: 20px;
-}
-
-.header-text-block button {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 30px;
-}
-
-.product-card-price {
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: 10px;
-}
-
-.product-card-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 5px;
-}
-
-.product-card-button {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 10px;
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section-menu-title,
@@ -72,7 +33,7 @@ p {
 .section-why-title,
 .section-where-title {
   font-size: 42px;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 40px;
 }
@@ -135,4 +96,379 @@ p {
   text-align: center;
   margin-top: 40px;
   opacity: 0.6;
+}
+
+/* Header */
+.header {
+  position: relative;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(../img/backgroundheaderimage.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--text_color);
+}
+
+.nav-list {
+  display: flex;
+  text-align: left;
+  gap: 24px;
+  margin-bottom: 70px;
+  padding-top: 55px;
+}
+
+.nav-list a {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 150;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--text_color);
+}
+
+.header-text-block {
+  max-width: 560px;
+}
+
+.header h1 {
+  font-size: 68px;
+  font-weight: 150;
+  line-height: 85px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text_color);
+  margin-bottom: 22px;
+}
+
+.header-text-block p {
+  font-size: 21px;
+  font-weight: 200;
+  max-width: 560px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: var(--text_color);
+}
+
+.header-text-block button {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 13px 34px;
+  border: none;
+  border-radius: 17px;
+  background-color: var(--first_button_color);
+  color: var(--text_color);
+  cursor: pointer;
+}
+
+.products-list {
+  display: flex;
+  gap: 40px;
+  margin-top: 120px;
+  padding-bottom: 80px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+  height: 225px;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+    var(--product_card_color);
+  color: var(--text_color);
+}
+
+.product-card:hover {
+  background-color: var(--product_card_hover_color);
+}
+
+.product-card-image {
+  top: -30px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.product-card-price {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.product-card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-card-button {
+  width: 80px;
+  height: 35px;
+  padding: 10px 5px;
+  font-weight: 750;
+  border: none;
+  border-radius: 0;
+  background-color: var(--buy_button_color);
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.product-card-price,
+.product-card-title,
+.product-card-button {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.product-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.exclamation-wrapper {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 30px;
+}
+
+.exclamation-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.exclamation-wrapper span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Menu */
+.menu {
+  background-color: var(--background_color);
+  padding: 21px 0 90px;
+}
+
+.section-menu-title {
+  font-family: "Inter", serif;
+  font-size: 72px;
+  font-weight: 100;
+  margin-bottom: 18px;
+  text-align: center;
+  color: var(--text_color);
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-card {
+  width: 350px;
+  text-align: center;
+}
+
+.menu-item {
+  position: relative;
+  min-height: 282px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  padding: 232px 20px 8px;
+  text-align: center;
+  color: var(--text_color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center 12px;
+  background-size: auto 180px;
+}
+
+.menu-item-title {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.menu-item-button {
+  width: 160px;
+  height: 40px;
+  font-size: 26px;
+  font-weight: 750;
+  line-height: 1;
+  margin-top: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 17px;
+  background-color: var(--first_button_color);
+  color: var(--text_color);
+  cursor: pointer;
+  text-transform: none;
+}
+
+.menu-card:nth-child(1) .menu-item {
+  background-image: url("../img/bread.png");
+  background-size: 294px 184px;
+  background-position: 50% 30px;
+}
+
+.menu-card:nth-child(2) .menu-item {
+  background-image:
+    url("../img/breadwithpowder.png"),
+    url("../img/bakerybread.png"),
+    url("../img/chocolatecookie.png");
+  background-size: 165px 130px, 280px 205px, 180px 155px;
+  background-position: 100% 100px, -15% 30px, 100% -30px;
+}
+
+.menu-card:nth-child(3) .menu-item {
+  background-image:
+    url("../img/chocckae.png"),
+    url("../img/applepie.png");
+  background-size: 93px 117px, 261px 260px;
+  background-position: 28% 130px, 50% 0;
+}
+
+.menu-card:nth-child(4) .menu-item {
+  background-image:
+    url("../img/pretzels.png"),
+    url("../img/cookiewithchocolatedots.png");
+  background-size: 160px 160px, 244px 253px;
+  background-position: 24% 100px, 52% 0;
+}
+
+/* Quality */
+.quality {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background_color);
+  padding: 24px 0 54px;
+}
+
+.quality .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-quality-title {
+  font-family: "Italiana", serif;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text_color);
+  margin-bottom: 2px;
+  padding-left: 375px;
+}
+
+.quality-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  list-style: none;
+  max-width: 960px;
+  margin: -2px auto 0;
+  padding: 0;
+}
+
+.quality-card {
+  width: 270px;
+}
+
+.quality-card-bread {
+  margin-top: -70px;
+}
+
+.quality-card-cookie {
+  margin-top: 50px;
+}
+
+.quality-card-pie {
+  margin-top: 82px;
+}
+
+.quality-card-image {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.quality-card-bread .quality-card-image {
+  width: 330px;
+  height: 205px;
+  margin-bottom: 16px;
+}
+
+.quality-card-cookie .quality-card-image {
+  width: 206px;
+  height: 214px;
+}
+
+.quality-card-pie .quality-card-image {
+  width: 220px;
+  height: 220px;
+}
+
+.quality-features {
+  width: 238px;
+  height: 130px;
+  margin: 8px auto 0;
+  padding: 12px 10px 12px;
+  list-style: none;
+  color: var(--text_color);
+  background-color: rgba(173, 173, 173, 0.35);
+}
+
+.quality-features-bread {
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 242, 0.55) 30%,
+    rgba(173, 173, 173, 0.35) 100%
+  );
+}
+
+.quality-card-bread .quality-features {
+  margin-top: -10px;
+}
+
+.quality-card-cookie .quality-features {
+  margin-top: 18px;
+}
+
+.quality-card-pie .quality-features {
+  margin-top: 14px;
+}
+
+.quality-features .quality-card-item {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
 }
